@@ -19,9 +19,9 @@ class CreateRamTable extends Migration
             $table->string('type');
             $table->integer('bus');
 
-            $table->dateTime('create_date');
-            $table->unsignedInteger('create_by');
-            $table->dateTime('modify_date');
+//            $table->dateTime('create_date');
+            $table->unsignedInteger('created_by');
+//            $table->dateTime('modify_date');
             $table->unsignedInteger('modify_by');
             $table->timestamps();
         });
