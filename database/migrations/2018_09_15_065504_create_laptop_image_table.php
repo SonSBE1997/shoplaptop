@@ -13,7 +13,7 @@ class CreateLaptopImageTable extends Migration
      */
     public function up()
     {
-        Schema::create('laptop_image', function (Blueprint $table) {
+        Schema::create('laptop_images', function (Blueprint $table) {
             $table->unsignedInteger('laptop_id')->unique();
             $table->string('image')->unique();
             $table->boolean('original');
@@ -26,7 +26,7 @@ class CreateLaptopImageTable extends Migration
 
             $table->foreign('laptop_id')
                 ->references('id')
-                ->on('laptop')
+                ->on('laptops')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
         });

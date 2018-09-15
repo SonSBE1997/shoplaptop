@@ -13,7 +13,7 @@ class CreateBillTable extends Migration
      */
     public function up()
     {
-        Schema::create('bill', function (Blueprint $table) {
+        Schema::create('bills', function (Blueprint $table) {
             $table->increments('id');
             $table->date('order_date');
             $table->unsignedInteger('user_id');
@@ -29,13 +29,13 @@ class CreateBillTable extends Migration
 
             $table->foreign('user_id')
                 ->references('id')
-                ->on('user')
+                ->on('users')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
 
             $table->foreign('customer_id')
                 ->references('id')
-                ->on('customer')
+                ->on('customers')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
         });

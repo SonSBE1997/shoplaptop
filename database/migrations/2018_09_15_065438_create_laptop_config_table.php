@@ -33,19 +33,19 @@ class CreateLaptopConfigTable extends Migration
 
             $table->foreign('producer_id')
                 ->references('id')
-                ->on('producer')
+                ->on('producers')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
 
             $table->foreign('cpu_id')
                 ->references('id')
-                ->on('cpu')
+                ->on('cpus')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
 
             $table->foreign('ram_id')
                 ->references('id')
-                ->on('ram')
+                ->on('rams')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
         });

@@ -13,7 +13,7 @@ class CreateBillDetailTable extends Migration
      */
     public function up()
     {
-        Schema::create('bill_detail', function (Blueprint $table) {
+        Schema::create('bill_details', function (Blueprint $table) {
             $table->unsignedInteger('bill_id')->unique();
             $table->unsignedInteger('laptop_id')->unique();
             $table->integer('quantity');
@@ -27,12 +27,12 @@ class CreateBillDetailTable extends Migration
 
             $table->foreign('bill_id')
                 ->references('id')
-                ->on('bill')
+                ->on('bills')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
             $table->foreign('laptop_id')
                 ->references('id')
-                ->on('laptop')
+                ->on('laptops')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
         });
