@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('test', function (){
+    return view('admin.layout');
+});
+Route::get('login', function (){
+   return view('admin.login');
+});
