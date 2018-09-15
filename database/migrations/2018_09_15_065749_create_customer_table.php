@@ -19,11 +19,6 @@ class CreateCustomerTable extends Migration
             $table->string('phone_number');
             $table->string('email');
             $table->string('address');
-
-//            $table->dateTime('create_date');
-            $table->unsignedInteger('created_by');
-//            $table->dateTime('modify_date');
-            $table->unsignedInteger('modify_by');
             $table->timestamps();
         });
     }

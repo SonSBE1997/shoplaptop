@@ -24,11 +24,6 @@ class CreateLaptopConfigTable extends Migration
             $table->string('dimension');
             $table->string('screen');
             $table->integer('battery');
-
-            $table->dateTime('create_date');
-            $table->unsignedInteger('create_by');
-            $table->dateTime('modify_date');
-            $table->unsignedInteger('modify_by');
             $table->timestamps();
 
             $table->foreign('producer_id')

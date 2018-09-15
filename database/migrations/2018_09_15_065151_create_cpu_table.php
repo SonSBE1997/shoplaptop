@@ -22,10 +22,6 @@ class CreateCpuTable extends Migration
             $table->float('max_speed');
             $table->integer('cache');
             $table->string('integrated_graphic');
-            $table->dateTime('create_date');
-            $table->unsignedInteger('create_by');
-            $table->dateTime('modify_date');
-            $table->unsignedInteger('modify_by');
             $table->timestamps();
         });
     }
