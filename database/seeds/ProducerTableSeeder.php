@@ -14,39 +14,25 @@ class ProducerTableSeeder extends Seeder
         //
         $producers = [
             [
-                'name' => 'Apple',
-                'created_by' => 1,
-                'modify_by' => 1,
+                'name' => 'Apple'
             ],
             [
-                'name' => 'Asus',
-                'created_by' => 1,
-                'modify_by' => 1,
+                'name' => 'Asus'
             ],
             [
-                'name' => 'Acer',
-                'created_by' => 1,
-                'modify_by' => 1,
+                'name' => 'Acer'
             ],
             [
-                'name' => 'Dell',
-                'created_by' => 1,
-                'modify_by' => 1,
+                'name' => 'Dell'
             ],
             [
-                'name' => 'Hp',
-                'created_by' => 1,
-                'modify_by' => 1,
+                'name' => 'Hp'
             ],
             [
-                'name' => 'Lenovo',
-                'created_by' => 1,
-                'modify_by' => 1,
+                'name' => 'Lenovo'
             ],
             [
-                'name' => 'MSI',
-                'created_by' => 1,
-                'modify_by' => 1,
+                'name' => 'MSI'
             ],
         ];
         foreach ($producers as $producer){

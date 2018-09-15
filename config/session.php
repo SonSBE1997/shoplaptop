@@ -13,7 +13,6 @@ return [
     |
     | Supported: "file", "cookie", "database", "apc",
     |            "memcached", "redis", "array"
-    |
     */
 
     'driver' => env('SESSION_DRIVER', 'file'),

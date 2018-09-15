@@ -25,10 +25,8 @@ class CreateLaptopTable extends Migration
             $table->boolean('hot');
             $table->float('discount');
 
-            $table->dateTime('create_date');
-            $table->unsignedInteger('create_by');
-            $table->dateTime('modify_date');
-            $table->unsignedInteger('modify_by');
+            $table->unsignedInteger('created_by');
+            $table->unsignedInteger('modified_by');
             $table->timestamps();
 
             $table->foreign('configuration_id')

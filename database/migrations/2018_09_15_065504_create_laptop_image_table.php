@@ -17,11 +17,6 @@ class CreateLaptopImageTable extends Migration
             $table->unsignedInteger('laptop_id')->unique();
             $table->string('image')->unique();
             $table->boolean('original');
-
-            $table->dateTime('create_date');
-            $table->unsignedInteger('create_by');
-            $table->dateTime('modify_date');
-            $table->unsignedInteger('modify_by');
             $table->timestamps();
 
             $table->foreign('laptop_id')

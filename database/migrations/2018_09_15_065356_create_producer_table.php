@@ -16,11 +16,6 @@ class CreateProducerTable extends Migration
         Schema::create('producer', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-
-//            $table->dateTime('create_date');
-            $table->unsignedInteger('created_by');
-//            $table->dateTime('modify_date');
-            $table->unsignedInteger('modify_by');
             $table->timestamps();
         });
     }

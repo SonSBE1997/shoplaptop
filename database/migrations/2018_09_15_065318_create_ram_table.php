@@ -18,11 +18,6 @@ class CreateRamTable extends Migration
             $table->integer('memory_capacity');
             $table->string('type');
             $table->integer('bus');
-
-//            $table->dateTime('create_date');
-            $table->unsignedInteger('created_by');
-//            $table->dateTime('modify_date');
-            $table->unsignedInteger('modify_by');
             $table->timestamps();
         });
     }
