@@ -15,7 +15,10 @@ class DatabaseSeeder extends Seeder
              UserTableSeeder::class,
              CustomerTableSeeder::class,
              RamTableSeeder::class,
-             ProducerTableSeeder::class
+             ProducerTableSeeder::class,
+             CpuTableSeeder::class,
+             LaptopConfigTableSeeder::class,
+             LaptopTableSeeder::class,
          ]);
 
     }
