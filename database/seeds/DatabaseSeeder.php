@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
              CpuTableSeeder::class,
              LaptopConfigTableSeeder::class,
              LaptopTableSeeder::class,
+             LaptopImageTableSeeder::class
          ]);
 
     }

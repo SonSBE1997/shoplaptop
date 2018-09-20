@@ -14,7 +14,7 @@ class CreateLaptopImageTable extends Migration
     public function up()
     {
         Schema::create('laptop_images', function (Blueprint $table) {
-            $table->unsignedInteger('laptop_id')->unique();
+            $table->unsignedInteger('laptop_id');
             $table->string('image')->unique();
             $table->boolean('original');
             $table->timestamps();

@@ -11,12 +11,13 @@ class LaptopImageTableSeeder extends Seeder
      */
     public function run()
     {
-        $laptopimage = [];
-        for ($i =1; $i<=20; $i++){
-            $arr = [
-                'laptop_id' => $i,
-                'image' => 'i'
-            ];
+        for ($i = 1; $i <= 10; $i++){
+            for ($j = 1; $j <= 4 ; $j++){
+                $laptop_id = $i;
+                $image = $i . "_" . $j . ".jpg";
+                $original = $j % 5 == 1 ? 1 : 0;
+                \App\LaptopImage::create(compact('laptop_id', 'image', 'original'));
+            }
         }
     }
 }
