@@ -11,16 +11,17 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-         $this->call([
-             UserTableSeeder::class,
-             CustomerTableSeeder::class,
-             RamTableSeeder::class,
-             ProducerTableSeeder::class,
-             CpuTableSeeder::class,
-             LaptopConfigTableSeeder::class,
-             LaptopTableSeeder::class,
-             LaptopImageTableSeeder::class
-         ]);
+        $this->call([
+            UserTableSeeder::class,
+            CustomerTableSeeder::class,
+            RamTableSeeder::class,
+            ProducerTableSeeder::class,
+            CpuTableSeeder::class,
+            LaptopConfigTableSeeder::class,
+            LaptopTableSeeder::class,
+            LaptopImageTableSeeder::class,
+            BillTableSeeder::class
+        ]);
 
     }
 }

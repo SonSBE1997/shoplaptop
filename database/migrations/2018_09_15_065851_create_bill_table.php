@@ -22,7 +22,7 @@ class CreateBillTable extends Migration
             $table->string('status');
 
             $table->unsignedInteger('created_by');
-            $table->unsignedInteger('modified_by');
+            $table->unsignedInteger('modified_by')->nullable();
             $table->timestamps();
 
             $table->foreign('user_id')
